@@ -1,8 +1,8 @@
 ##
 # Database config for relational db.
 connections = {
-  :development => "postgres://localhost/braindump",
-  :test => "postgres://postgres@localhost/braindump_test",
+  :development => "postgres://localhost/nrtu",
+  :test => "postgres://postgres@localhost/nrtu_test",
   :production => ENV['DATABASE_URL']
 }
 
