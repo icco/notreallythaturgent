@@ -11,5 +11,6 @@ gem 'rack-test', :require => "rack/test", :group => "test"
 gem 'rake'
 gem 'rr', :group => "test"
 gem 'sinatra-flash', :require => 'sinatra/flash'
+gem 'therubyracer'
 gem 'thin'
 #gem 'twilio-ruby', :git => 'git@github.com:icco/twilio-ruby.git'
