@@ -1,7 +1,5 @@
-# Helper methods defined here can be accessed in any controller or view in the application
-
 Nrtu.helpers do
-  # def simple_helper_method
-  #  ...
-  # end
+  def twilio_client
+    return Twilio::REST::Client.new ENV['TWILIO_KEY'], ENV['TWILIO_SECRET']
+  end
 end
