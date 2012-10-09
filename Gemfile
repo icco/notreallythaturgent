@@ -1,32 +1,15 @@
 source :rubygems
 
-# Server requirements
-# gem 'thin' # or mongrel
-# gem 'trinidad', :platform => 'jruby'
-
-# Project requirements
-gem 'rake'
-gem 'sinatra-flash', :require => 'sinatra/flash'
-
-# Component requirements
-gem 'rack-less'
-gem 'less'
-gem 'erubis', "~> 2.7.0"
 gem 'activerecord', :require => "active_record"
-gem 'pg'
-
-# Test requirements
-gem 'rr', :group => "test"
+gem 'erubis', "~> 2.7.0"
+gem 'less'
 gem 'minitest', "~>2.6.0", :require => "minitest/autorun", :group => "test"
+gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
+gem 'pg'
+gem 'rack-less'
 gem 'rack-test', :require => "rack/test", :group => "test"
-
-# Padrino Stable Gem
-# gem 'padrino', '0.10.7'
-
-# Or Padrino Edge
-# gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
-
-# Or Individual Gems
-%w(core gen helpers cache mailer admin).each do |g|
-  gem 'padrino-' + g, :path => '/Users/nat/.rvm/gems/ruby-1.9.3-p194/gems/padrino-' + g
-end
+gem 'rake'
+gem 'rr', :group => "test"
+gem 'sinatra-flash', :require => 'sinatra/flash'
+gem 'thin'
+gem 'twilio-ruby'
