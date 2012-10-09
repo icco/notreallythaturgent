@@ -14,3 +14,9 @@ gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'therubyracer'
 gem 'thin'
 #gem 'twilio-ruby', :git => 'git@github.com:icco/twilio-ruby.git'
+
+# For dev
+group :development do
+  gem 'heroku'
+  gem 'shotgun'
+end
