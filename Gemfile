@@ -1,10 +1,10 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'activerecord', '~> 3', :require => "active_record"
 gem 'erubis', "~> 2.7.0"
 gem 'less'
 gem 'minitest', "~> 2.6.0", :require => "minitest/autorun", :group => "test"
-gem 'padrino'
+gem 'padrino', '>= 0.11'
 gem 'pg'
 gem 'rack-less'
 gem 'rack-test', :require => "rack/test", :group => "test"
@@ -17,6 +17,5 @@ gem 'thin'
 
 # For dev
 group :development do
-  gem 'heroku'
   gem 'shotgun'
 end
