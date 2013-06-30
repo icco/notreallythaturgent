@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'activerecord', '~> 3', :require => "active_record"
+gem 'activerecord', '~> 3.2', :require => "active_record"
 gem 'erubis', "~> 2.7.0"
 gem 'less'
 gem 'minitest', "~> 2.6.0", :require => "minitest/autorun", :group => "test"
